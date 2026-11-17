@@ -1,0 +1,403 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000vh;
+    background-color:#0b0b0b ;
+    color: white;
+}
+
+
+
+.home{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    background: rgba(10, 10, 12, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(46, 204, 113, 0.4);
+    border-bottom: 2px solid rgba(46, 204, 113, 0.4);
+}
+
+
+.hud-center-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.6;
+}
+
+.hud-status{
+    align-items: center;
+    color: #f39c12;
+    font-size: 12px;
+     font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.divider-line{
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #f39c12, transparent);
+}
+
+
+
+
+.logo a{
+    display: flex;
+color: #f39c12;
+padding-left: 20px;
+font-size: 25px;
+text-decoration: none;
+font-family: "Shantell Sans", cursive;
+}
+
+
+.nav-header{
+margin-right: 70px;
+font-size: 25px;
+ background: rgba(243, 156, 18, 0.08);
+border: 1px solid rgba(243, 156, 18, 0.5);
+   font-weight: 900;
+    letter-spacing: 2.5px;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    align-items: center;
+}
+
+.nav-header:hover{
+     background: #f39c12;
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.8);
+    border-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+.nav-header a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.main-nav-header{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-bottom: -12px;
+}
+
+.nav-header span{
+    display: inline-block;
+    transition: transform 0.25s ease ;
+}
+
+.main-nav-header:hover .nav-header span {
+    transform: rotate(90deg);
+    
+}
+
+
+.main-nav-header ul{
+  display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 170px;
+    background: rgba(12, 12, 15, 0.96);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(243, 156, 18, 0.4);
+    border-bottom: 2px solid #f39c12;
+    border-radius: 6px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+    z-index: 99999;
+}
+
+
+.main-nav-header:hover ul {
+    display: block;
+}
+
+
+.main-nav-header ul li a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.main-nav-header ul li a:hover {
+    background: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+    padding-left: 24px;
+}
+
+
+.franklin-main{
+      min-height: 100vh;
+    background-color: #0a0a0c;
+    color: #ffffff;
+    padding-bottom: 60px;
+    
+}
+
+
+
+
+
+
+
+
+.franklin-clinton{
+    height: 50vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+
+
+
+}
+
+
+  
+
+.franklin-clinton h1{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px 0;
+     font-family: "Montserrat", sans-serif;
+}
+
+.franklin-clinton p{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px 0;
+    color: #2ecc71;
+}
+
+
+
+.main-card{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+    padding: 100px 8%;
+}
+
+
+
+.card1{
+   background-color: rgba(18, 18, 22, 0.85);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    border-left: 4px solid #2ecc71;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1 h1{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+     font-family: "Montserrat", sans-serif;
+}
+
+.card1 p{
+    line-height: 1.7;
+    font-size: 17px;
+    color: #d0d0d5;
+    margin-bottom: 40px;
+    padding: 20px 10px;
+     font-family: "Montserrat", sans-serif;
+}
+
+
+.p1{
+border: 1px solid rgba(46, 204, 113, 0.3);
+padding: 10px;
+background-color: rgba(46, 204, 113, 0.1);
+border-radius: 5px;
+ font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+.card2{
+  background-color: rgba(18, 18, 22, 0.85);
+    border: 1px solid rgba(46, 204, 113, 0.3) ;
+    border-left: 4px solid #2ecc71 ;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+
+.stat-item {
+    margin-bottom: 18px;
+}
+
+.stat-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+}
+
+.stat-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+    border-radius: 4px;
+}
+
+.franklin-image{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 60px; 
+    gap: 40px;
+    border: 1px solid rgba(46, 204, 113, 0.5);
+    background: rgba(18, 18, 22, 0.85);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.2);
+    border-radius: 6px;
+    margin: 0 8% 60px 8%;
+}
+
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ 
+
+.text{
+    width: 100%;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+}
+.text p{
+    color: #27ae60;
+    font-size: 15px;
+     font-family: "Montserrat", sans-serif;
+}
+.text h1{
+    font-size: 40px;
+     font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .franklin-main {
+        padding: 110px 15px 40px 15px;
+    }
+
+    .home {
+        left: 10px;
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .nav-header {
+        font-size: 14px;
+        padding: 4px 8px;
+        margin-right: 0;
+    }
+
+    .franklin-clinton h1 {
+        font-size: 38px;
+    }
+
+    .franklin-clinton p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .main-card {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .card1, .card2 {
+        height: auto;
+        padding: 20px;
+    }
+
+  
+    .franklin-image {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 40px 0;
+    }
+
+    .foto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text h1 {
+        font-size: 26px;
+    }
+}

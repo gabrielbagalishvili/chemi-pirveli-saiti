@@ -1,0 +1,589 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000vh;
+    background-color:#0b0b0b ;
+    color: white;
+}
+
+
+
+
+
+
+.home{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+  
+    width: 100%;
+    background: rgba(10, 10, 12, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(243, 156, 18, 0.4);
+    border-bottom: 2px solid #f39c12;
+}
+
+
+.hud-center-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.6;
+}
+
+.hud-status{
+    align-items: center;
+    color: #f39c12;
+    font-size: 12px;
+     font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.divider-line{
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #f39c12, transparent);
+}
+
+
+
+
+.logo a{
+    display: flex;
+color: #f39c12;
+padding-left: 20px;
+font-size: 25px;
+text-decoration: none;
+font-family: "Shantell Sans", cursive;
+}
+
+
+.nav-header{
+margin-right: 70px;
+font-size: 25px;
+ background: rgba(243, 156, 18, 0.08);
+border: 1px solid rgba(243, 156, 18, 0.5);
+   font-weight: 900;
+    letter-spacing: 2.5px;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: flex;
+    align-items: center;
+}
+
+.nav-header:hover{
+     background: #f39c12;
+    box-shadow: 0 0 25px rgba(243, 156, 18, 0.8);
+    border-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+.nav-header a{
+    color: white;
+    text-decoration: none;
+     font-family: "Montserrat", sans-serif;
+}
+
+.main-nav-header{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-bottom: -12px;
+}
+
+.nav-header span{
+    display: inline-block;
+    transition: transform 0.25s ease ;
+}
+
+.main-nav-header:hover .nav-header span {
+    transform: rotate(90deg);
+    
+}
+
+
+.main-nav-header ul{
+  display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 170px;
+    background: rgba(12, 12, 15, 0.96);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(243, 156, 18, 0.4);
+    border-bottom: 2px solid #f39c12;
+    border-radius: 6px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+    z-index: 99999;
+}
+
+
+.main-nav-header:hover ul {
+    display: block;
+}
+
+
+.main-nav-header ul li a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.main-nav-header ul li a:hover {
+    background: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+    padding-left: 24px;
+}
+
+
+
+.home-image{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://cdn.mos.cms.futurecdn.net/9QfCTPwV3DkPuUgBHrorom.jpg);
+    background-position: center;
+}
+  
+
+.home-image h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+     font-family: "Montserrat", sans-serif;
+}
+
+.about-game{
+   
+   text-align: center;
+   padding: 80px 20px;
+}
+.about-game h1{
+    font-size: 45px;
+    color: #f39c12;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+     font-family: "Montserrat", sans-serif;
+}
+
+.about-game p{
+     max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+   
+}
+
+
+
+.gta-Statistics{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #151515;
+    padding: 25px 20px;
+    border: 1px solid #222;
+    flex-wrap: wrap;
+}
+
+.stat-box h1{
+    font-size: 40px;
+    color:#f39c12 ;
+}
+.stat-box p{
+    font-size: 20px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+.Game-Features{
+    text-align: center;
+    padding: 80px 20px;
+    
+}
+
+
+.Game-Features h1{
+    font-size: 50px;
+     font-family: "Montserrat", sans-serif;
+}
+
+
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+
+.text{
+    background-color: #121212;
+    border-left: 4px solid #f39c12;
+    padding: 30px;
+    flex: 1;
+    max-width: 280px;
+    text-align: left;
+    border-radius: 4px;
+    
+}
+
+.text:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.text h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+.text p{
+     color: #aaa;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+
+.radio{
+    padding: 80px 20px;
+    background-color: #0d0d0d;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+}
+
+.radio-title{
+      font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.radio-grid{
+   display: flex;
+   justify-content: center;
+  gap:20px;
+      max-width: 1200px;
+    margin: 0 auto;
+}
+
+.radio-card{
+    background-color: #161616;
+     border: 1px solid #252525;
+     border-radius: 6px;
+     padding: 10px 7px;
+     flex: 1;
+     min-width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.radio-card:hover {
+    border-color: #f39c12;
+    transform: translateY(-5px);
+}
+.radio-card h2{
+    color: #f39c12;
+
+}
+.radio-card p{
+    color: #aaa;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.system{
+   padding: 80px 20px;
+    background-color: #0b0b0b;
+    text-align: center;
+    border-top: 1px solid #1f1f1f;
+
+}
+.system h1{
+     font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 40px;
+     font-family: "Montserrat", sans-serif;
+}
+
+
+.System-Requirements{
+    display: flex;
+    justify-content: center;
+      gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+.system-card{
+    border: 1px solid #222;
+    background-color: #121212;
+   border-radius: 6px;
+   padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease, border-color= 0.3s ease;
+}
+.system-card:hover{
+     transform: translateY(-5px);
+    border-color: #f39c12;
+}
+
+.system-card h3{
+    font-size: 25px;
+    color: #f39c12;
+     margin-bottom: 20px;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 15px;
+}
+.system-card ul{
+     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.system-card li{
+      color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+
+.sidebar{
+    position: fixed; 
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+   
+   
+}
+
+.sidebar-toggle{
+   background: #f39c12;
+    color: #000;
+    padding: 18px 12px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    box-shadow: -4px 0 20px rgba(243, 156, 18, 0.6);
+   
+}
+.sidebar-content{
+    background-color:#0d0d0d ;
+    border: 1px solid #f39c12;
+    border-right: none;
+    padding: 20px;
+    width: 230px;
+    position: absolute;
+    right: -300px;
+    transition: right 0.4s ease;
+    text-align: left;
+    border-radius: 8px 0 0 8px;
+   
+}
+
+.sidebar-content h3{
+    color: #f39c12;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #222;
+     font-family: "Montserrat", sans-serif;
+}
+
+
+
+.ul-1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom:  1px solid #222;
+}
+
+.sidebar-content li {
+    margin-bottom: 15px;
+    
+}
+
+.sidebar-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar-content a:hover {
+    color: #f39c12;
+}
+
+.sidebar:hover .sidebar-content {
+    right: 40px;
+}
+
+
+.sidebar-content ul a{
+    font-size: 17px;
+}
+
+.ul-2{
+   list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.ul-2 li{
+    margin-bottom: 8px;
+}
+
+.ul-2 a{
+    display: block;
+    color: #f39c12;
+    border: 1px solid #332610 ;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.ul-2 a:hover{
+    border-color: #f39c12;
+    background-color: rgba(243, 156, 18, 0.15);
+    color: #ffffff ;
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  
+    .home {
+        left: 10px;
+        width: calc(100% - 20px);
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .logo a {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .nav-header {
+        font-size: 14px;
+        padding: 4px 8px;
+        margin-right: 10px;
+    }
+
+   
+    .header-text {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .text {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .radio-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .radio-card {
+        width: 100%;
+        max-width: 450px;
+        box-sizing: border-box;
+    }
+
+   
+    .System-Requirements {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .system-card {
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+
+    
+    .sidebar {
+        z-index: 9999;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .home-image h1 {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+
+    .about-game h1, .Game-Features h1, .radio-title, .system h1 {
+        font-size: 32px;
+    }
+
+    .about-game p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+  
+    .gta-Statistics {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
